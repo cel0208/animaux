@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>La tortue de Kemp</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+		
+		<body>
+			<h1> Les espèces menacées </h1>
+				
+			
+			<ul class="menu">
+				<li> <a href="index.html"> Accueil </a> </li>
+				<li> <a href="panda.html"> Le panda géant </a> </li>
+				<li> <a href="panthere des neiges.html"> La panthère des neiges</a> </li>
+				<li> <a href="tortue de kemp.html"> La tortue de kemp </a> </li>
+				<li> <a href="orang-outan.html"> L'orang-outan </a> </li>
+				<li> <a href="beluga.html"> Le béluga </a> </li>
+			</ul>
+			
+			<h2> La tortue de Kemp </h2>
+			
+				<p class=infos>Statut: En danger critique d'extinction </br>
+				Population: Environ 1000 dans le monde </br> 
+				Habitat: Océan Atlantique, le long de la côte Est des États-Unis</br>
+				Prédateur: L'Homme et les oiseuax et les crabes (pour les bébés)</br>
+				Régime alimentaire: Omnivore</br>
+				</p>
+				
+				<img src="Images/tortue.jpg" />
+		
+					<p>La tortue de Kemp, scientifiquement connue sous le nom de Lepidochelys kempii, est une espèce gravement menacée d'extinction. C'est la plus petite des tortues marines, mesurant entre 60 et 90 cm de long et pesant environ 45 kg. Originaire principalement du golfe du Mexique, elle est également observée le long de la côte est des États-Unis. </br>
+					L'une des principales menaces pour cette tortue est la capture accidentelle dans les engins de pêche, notamment les filets maillants et les chaluts. Ces captures non intentionnelles, appelées prises accessoires, sont souvent fatales. La destruction des habitats de nidification due au développement côtier représente également une menace considérable. Les plages où elles pondent leurs œufs sont de plus en plus touchées par l'urbanisation, l'érosion et le tourisme. La pollution des océans, y compris les déchets plastiques et les hydrocarbures, pose un risque sérieux. Les tortues confondent souvent les sacs plastiques avec des méduses, leur proie naturelle. Le réchauffement climatique affecte aussi ces tortues de plusieurs façons, en modifiant par exemple la température des sables de nidification, ce qui influence le sexe des nouveau-nés, et en causant la montée du niveau des mers, menaçant ainsi les plages de nidification.</br>
+					Divers efforts de conservation sont en place pour sauver cette espèce, notamment la protection des plages de nidification, l'instauration de zones de non-pêche et l'utilisation de dispositifs d'exclusion des tortues (DET) dans les chaluts de pêche. Ces initiatives sont cruciales pour assurer la survie de cette espèce emblématique. Protégée par la loi dans de nombreux pays, la tortue de Kemp symbolise la lutte pour préserver la biodiversité marine. La collaboration internationale et l'engagement local sont essentiels pour inverser le déclin de cette espèce et garantir un avenir où elle puisse prospérer.</br></p>
+				
+						<div class="quiz-container"> 
+							<p class=quizz>Petit quizz: Combien de temps peut vivre une tortue de Kemp ?</p>
+							<div class="button-container"> 
+								<button onclick="checkAnswer(this, 'incorrect')">5 à 10 ans
+								</button> <button onclick="checkAnswer(this, 'incorrect')">10 à 30 ans
+								</button> <button onclick="checkAnswer(this, 'correct')">30 à 50 ans</button>  
+								<span id="result"></span>
+							</div>
+						</div>
+						
+						<script>
+							function checkAnswer(element, correctness) {
+								resetButtons(); 
+								const result = document.getElementById('result');
+								if (correctness === 'correct') { 
+									element.className = 'correct';
+									result.textContent = 'Bravo! On peut estimer son âge en comptant les anneaux de croissance sur ses écailles';
+								} else { 
+									element.className = 'incorrect'; 
+									result.textContent = 'Dommage... Réessayez!';
+								} 
+								setTimeout(() => {
+									resetButtons(); 
+									result.textContent = ''; 
+								}, 2000);
+							} 
+							function resetButtons() {
+								const buttons = document.querySelectorAll('button');
+								buttons.forEach(button => button.className = '');
+							}
+						</script>
+	</body>
+</html>
+

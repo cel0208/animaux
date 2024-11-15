@@ -1,0 +1,121 @@
+body {
+    background-color: #d4f9d4; /* Fond vert pastel */
+    font-family: Comic sans MS;
+}
+
+
+h1 {
+    text-align: center;
+    color: #333;
+	font-size: 40px; 
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+	font-size: 30px; 
+}
+
+p{
+    padding-left: 50px;
+	padding-right: 50px;
+	text-align: justify;
+}
+
+
+.infos {
+	text-align: center;
+    color: #333;
+	border: 2px solid black;
+	border-radius: 4px;
+	margin: 0 5%;
+}
+
+.quizz {
+	text-align: center;
+    color: #333;
+}
+
+.correct { 
+	background-color: green; 
+} 
+
+.incorrect { 
+	background-color: red; 
+}
+
+#result {
+	margin-left: 10px;
+	font-size: 16px; 
+}
+
+img {
+    display: block;
+    margin: 20px auto;
+    width: 700px;
+}
+
+iframe {
+	width: 60%; 
+	height: auto; 
+	aspect-ratio: 16/9; 
+	margin-bottom: 20px;  
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.audio {
+    text-align: center;
+}
+
+
+.menu {
+    display: flex;
+    padding: 0;
+	justify-content: space-around;
+}
+
+.menu li {
+	list-style-type:none;
+}
+
+.menu a{
+	display:block;
+	min-width: 120px;
+	margin:0.5rem;
+	padding: 0.4rem;
+	text-align: center;
+	background-color: #1ABC9C; /*couleur du bouton*/
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+}
+
+.menu a:hover{
+	background-color: #05095f;
+}
+
+.quiz-container { 
+	text-align: center; 
+} 
+
+button-container { 
+	display: flex; 
+	justify-content: center; 
+}
+
+ button { 
+	 padding: 15px 30px;
+	 font-size: 16px; 
+	 border: none; 
+	 border-radius: 10px; 
+	 cursor: pointer; 
+	 background-color: #2EADC9; 
+	 color: white; 
+ } 
+ 
+ button:hover {
+	 background-color: #426892; 
+} 
+
